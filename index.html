@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDK Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="loader">
+    <h1>HD Care Boutique 💖</h1>
+</div>
+<!-- 🌸 NAVBAR -->
+<header>
+    <h1>HDK Boutique</h1>
+    <button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+   <nav>
+    <a href="#home">Home</a>
+    <a href="women.html">Collections</a>
+    <a href="men.html">Men</a>
+    <a href="#contact">Contact</a>
+</nav>
+</header>
+<!-- 💖 HERO SECTION -->
+<section class="slider">
+
+    <div class="slides">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\download (7).jpg" class="slide active">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\download (9).jpg"class="slide">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\download (10).jpg" class="slide">
+    </div>
+
+    <div class="slider-text">
+        <h2>Trending Now 💖</h2>
+        <p>Discover your perfect style</p>
+        <a href="women.html"><button>Shop Now</button></a>
+    </div>
+
+</section>
+
+<!-- 👗 WOMEN COLLECTION -->
+<section id="women" class="collection">
+    <h2>Women's Collection</h2>
+    <div class="grid">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\A beautiful saree with a peacock feathers theme.jpg">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\Beautiful dress.jpg">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\download (8).jpg">
+    </div>
+</section>
+
+<!-- 🧥 MEN COLLECTION -->
+<section id="men" class="collection">
+    <h2>Men's Collection 🔥</h2>
+    <div class="grid">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\download (5).jpg">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\Buy Stylish Colloection of Black Velvet Jodhpuri Suit Embroidered Bandgala Wedding Party Wear Online in India - Etsy.jpg">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\download (10).jpg">
+    </div>
+</section>
+
+<!-- 💖 MIXED GALLERY -->
+<section class="collection">
+    <h2>Trending Styles ✨</h2>
+    <div class="grid">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\Pastel Layered Half Saree for Summer Party_ Elegant Aesthetic Outfit Idea.jpg">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\Premium Designer Sarees Collection_ Elegant Silk & Modern Sarees for Women Worldwide.jpg">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\Soft Modest Dress Outfit 🌸 _ Hijab Style.jpg">
+    </div>
+</section>
+
+<!-- 📞 CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 +91 9542811983</p>
+    <p>📍 Andhra Pradesh</p>
+
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3800.6036925869607!2d83.29422157517254!3d17.716172083228166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDQyJzU4LjIiTiA4M8KwMTcnNDguNSJF!5e0!3m2!1sen!2sin!4v1774173233287!5m2!1sen!2sin"
+    width="80%" 
+    height="250" 
+    style="border:0; border-radius:15px;">
+</iframe>
+</section>
+<section class="feedback">
+    <h2>Customer Feedback ⭐</h2>
+
+    <form class="feedback-form">
+        <input type="text" placeholder="Your Name">
+        <textarea placeholder="Your Feedback"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 HDK Boutique</p>
+</footer>
+<a href="https://wa.me/919542811983" class="whatsapp" target="_blank">
+    💬
+</a>
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide() {
+    slides.forEach(slide => slide.classList.remove("active"));
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}
+
+setInterval(showSlide, 3000);
+</script>
+<!-- Your other scripts (slider, dark mode, etc.) -->
+
+<script>
+window.addEventListener("load", function() {
+    let loader = document.getElementById("loader");
+    if(loader){
+        loader.style.display = "none";
+    }
+});
+</script>
+
+</body>
+</html>

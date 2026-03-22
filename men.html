@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Men's Collection - HDK Boutique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>HDK Boutique</h1>
+</header>
+<a href="index.html" class="home-btn">← Back to Home</a>
+<h2 style="text-align:center;">Men's Collection 🔥</h2>
+
+<div class="grid">
+
+    <div class="product">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\download (6).jpg">
+        <h3>Casual Shirt</h3>
+        <p>₹899</p>
+       <a href="order.html">
+    <button>Buy Now 🛍️</button>
+            <input type="number" placeholder="Your price ₹" class="price-input">
+<button onclick="bargain(this)">Bargain 💬</button>
+        </a>
+        <select class="size-select">
+    <option>Select Size</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+    </div>
+
+    <div class="product">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\Buy Stylish Colloection of Black Velvet Jodhpuri Suit Embroidered Bandgala Wedding Party Wear Online in India - Etsy.jpg">
+        <h3>Stylish Jacket</h3>
+        <p>₹1999</p>
+       <a href="order.html">
+    <button>Buy Now 🛍️</button>
+            <input type="number" placeholder="Your price ₹" class="price-input">
+<button onclick="bargain(this)">Bargain 💬</button>
+        </a>
+        <select class="size-select">
+    <option>Select Size</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+    </div>
+
+    <div class="product">
+        <img src="C:\Users\hladh\OneDrive\Desktop\projects\FUTURE_FS_03\images\download (11).jpg">
+        <h3>Party Wear</h3>
+        <p>₹2499</p>
+       <a href="order.html">
+    <button>Buy Now 🛍️</button>            <input type="number" placeholder="Your price ₹" class="price-input">
+<button onclick="bargain(this)">Bargain 💬</button>
+        </a>
+        <select class="size-select">
+    <option>Select Size</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+    </div>
+
+</div>
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+<script>
+function bargain(btn) {
+    let product = btn.parentElement;
+    let priceInput = product.querySelector(".price-input");
+
+    let price = priceInput.value;
+
+    if(price === "" || price <= 0) {
+        alert("Please enter a valid price 💖");
+        return;
+    }
+
+    alert("Your offer of ₹" + price + " has been sent! 💸");
+}
+</script>
+</body>
+</html>

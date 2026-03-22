@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place Order - HDk Boutique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Place Your Order 🛍️</h2>
+<form class="order-form" onsubmit="placeOrder(event)">
+
+    <input type="text" placeholder="Your Name" required>
+    <input type="text" placeholder="Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+
+    <select required>
+        <option value="">Select Size</option>
+        <option>XS</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+    </select>
+
+    <button type="submit">Confirm Order ✅</button>
+
+</form>
+
+<p id="success-msg" style="display:none; color:green; text-align:center;">
+    🎉 Order placed successfully!
+</p>
+<script>
+function placeOrder(event) {
+    event.preventDefault(); // stop page reload
+
+    document.getElementById("success-msg").style.display = "block";
+
+    alert("🎉 Your order has been confirmed!");
+
+    // optional: clear form
+    document.querySelector(".order-form").reset();
+}
+</script>
+<!-- Your other scripts (slider, dark mode, etc.) -->
+
+<script>
+window.addEventListener("load", function() {
+    let loader = document.getElementById("loader");
+    if(loader){
+        loader.style.display = "none";
+    }
+});
+</script>
+
+</body>
+</html>
